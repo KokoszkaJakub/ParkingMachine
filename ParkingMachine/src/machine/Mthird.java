@@ -4,12 +4,8 @@ import javax.swing.JOptionPane;
 
 public class Mthird {
 
-	public static boolean IfCoin(int moneta) {
-		if (moneta == 1 || moneta == 2 || moneta == 5) {
-			return true;
-		} else {
-			return false;
-		}
+	public static boolean IfCoin(int coin) {
+		return coin == 1 || coin == 2 || coin == 5;
 
 	}
 
