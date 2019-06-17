@@ -10,23 +10,23 @@ public static void main(String[] args) {
 
 		String JedenTxt = JOptionPane.showInputDialog("podaj pierwszy nominał");
 		{
-			int jeden = Integer.parseInt(JedenTxt);
+			int firstCoin = Integer.parseInt(JedenTxt);
 
-			if (cost == jeden) {
+			if (cost == firstCoin) {
 				JOptionPane.showMessageDialog(null, "zapłacono");
 			}
 
-			else if (cost < jeden) {
-				JOptionPane.showMessageDialog(null, "towja reszta to " + (jeden - cost));
+			else if (cost < firstCoin) {
+				JOptionPane.showMessageDialog(null, "towja reszta to " + (firstCoin - cost));
 
-			} else if (cost > jeden) {
+			} else if (cost > firstCoin) {
 
 				String DwaTxt = JOptionPane.showInputDialog("podaj drugi nominał");
-				int dwa = Integer.parseInt(DwaTxt);
-				int suma = jeden + dwa;
-				if (cost == suma) {
+				int secondCoin = Integer.parseInt(DwaTxt);
+				int sum = firstCoin + secondCoin;
+				if (cost == sum) {
 					JOptionPane.showMessageDialog(null, "zapłacono");
-				} else if (cost > suma) {
+				} else if (cost > sum) {
 					JOptionPane.showMessageDialog(null, "nie wystarczająca ilosc srodkow");
 
 				}
