@@ -10,7 +10,7 @@ public class Mthird {
 		String coinTxt = JOptionPane.showInputDialog("Podaj nominał");
 		int coinValue = Integer.parseInt(coinTxt);
 
-		while (coinValue <= cost) {
+		while (coinValue < cost) {
 			coinTxt = JOptionPane.showInputDialog("Podaj nominał");
 			coinValue += Integer.parseInt(coinTxt);
 		}
