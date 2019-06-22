@@ -32,7 +32,7 @@ public class M4BD {
 					+ cash + ", reszta: " + (cash.subtract(cost)));
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "to nie jest moneta !");
-			// TODO: handle exception
+			
 		}
 	}
 }
